@@ -1,7 +1,7 @@
 # UA-EN Voice Assistant 
 ## No api-keys | local | llama3.1 (12k tokens prompt-menu ~20 pages in single request)
-![GitHub](https://img.shields.io/github/license/Katashynskyi/voice_assistant_UA_EN)
-![GitHub last commit](https://img.shields.io/github/last-commit/Katashynskyi/voice_assistant_UA_EN)
+![GitHub](https://img.shields.io/github/license/Katashynskyi/Voice_assistant_UA_EN)
+![GitHub last commit](https://img.shields.io/github/last-commit/Katashynskyi/Voice_assistant_UA_EN)
 ![Gif](data/media/gif.gif)
 
 
