@@ -1,0 +1,7 @@
+.conda
+.vscode
+__pycache__
+data/model_data
+data/HISTORY.json
+flagged
+src/__pycache__
