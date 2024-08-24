@@ -1,48 +1,77 @@
-# UA-EN Voice Assistant 
-## No api-keys | local | llama3.1 (12k tokens prompt-menu ~20 pages in single request)
+# 🚀 UA-EN Voice Assistant  
+## 🔐 No API-Keys | 🖥️ Local | 🧠 LLaMA 3.1 (12K Tokens Prompt-Menu ~20 Pages in Single Request)  
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Katashynskyi/Voice_assistant_UA_EN)
-![gif](https://github.com/user-attachments/assets/d83255df-411f-4300-b04f-092f61dd5aae)
+![🛠️ GitHub Last Commit](https://img.shields.io/github/last-commit/Katashynskyi/Voice_assistant_UA_EN)  
+![🎬 Demo GIF](https://github.com/user-attachments/assets/d83255df-411f-4300-b04f-092f61dd5aae)  
 
+🎥 **Demo Versions:**  
+[![🖥️ GUI Version](data/media/GUI_V.png)](https://youtu.be/iw9P4Y7KXI4)  
+[![💻 Console Version](data/media/CONSOLE_V.png)](https://youtu.be/c-8Z4qzOcII)  
 
-[![GUI version](data/media/GUI_V.png)](https://youtu.be/iw9P4Y7KXI4)
-[![Console version](data/media/CONSOLE_V.png)](https://youtu.be/c-8Z4qzOcII)
+---  
 
-## The Idea
-This project serves as a proof-of-concept for a minimum viable product (MVP) inspired by the capabilities of the OMNI model from ChatGPT. However, it offers a significant advantage: local deployment without restrictions. This empowers users to leverage its functionalities for various purposes, including:
-- Translation across languages
-- Learning Enhancement by practicing writing, reading, and audio skills
-- Customization for tailored use cases
+## 💡 Idea  
+This project is a **proof-of-concept** for an **MVP**, inspired by OMNI's capabilities (ChatGPT).  
+✅ **Main advantage** — **fully local deployment with no restrictions**.  
+🛠️ Use it for:  
+- 🌍 Language translation  
+- 📚 Learning enhancement (reading, writing, audio skills)  
+- 🎛️ Customization for specific needs  
 
-## Features & Tech stack
+---  
 
-- **Language Classification**: classify if it's UA or EN for authomatic mode."Lang-id-voxlingua107-ecapa" by speechbrain (supports 100+ lang's).
-- **Google legacy recognizer**: it uses a generic key that works out of the box. It's fast and works well.
-- **Wav2Vec2-Bert**: best (for now) Ukrainian Speech-to-text converter.
-- **Edge-TTS**: best (not generated) voices I can get for free.
-- **Ollama-python**: lib to download and use most popular LLM's.
-- **Streamlit**: for GUI.
-- **dialogue saved in json**: HISTORY.json (only for main.py. For app.py it's only short-term context-window memory).
-- **Config.py**: prompt for best user experience (modify it for your own purposes).
+## ⚙️ Features & Tech Stack  
 
+🗣️ **Language Classification**: Auto-detects UA/EN using **Lang-id-voxlingua107-ecapa** (supports 100+ languages).  
+🎙️ **Google Legacy Recognizer**: Fast and free speech recognition.  
+🔊 **Wav2Vec2-Bert**: **Best** Ukrainian speech-to-text model (so far).  
+🗣️ **Edge-TTS**: **High-quality** natural voices for free.  
+🤖 **Ollama-python**: Download and run LLMs offline.  
+🖥️ **Streamlit**: GUI support.  
+📜 **Dialogue saved in JSON**: **HISTORY.json** (for `main.py`), **short-term memory** for `app.py`.  
+📝 **Config.py**: Customize **prompt** for the best user experience.  
 
-## Getting Started
-### Tested on
-- WSL 22.04.3
-- Geforce (mobile) GTX 1050Ti (4GB)
-- RAM (32GB)
-### Prerequisites
-- Python 3.9+
-- Virtual environment (Conda 3.9+)
-- CUDA (optional)
-### Installation
+---  
 
-- Clone the repository
-- Create conda venv (Conda 3.9)
-- sudo apt install portaudio19-dev
-- Install the required packages: pip install -r requirements.txt
+## 🚀 Getting Started  
 
-## Usage
+### ✅ Tested on:  
+🖥️ **WSL 22.04.3**  
+🎮 **GeForce GTX 1050Ti (4GB, Mobile)**  
+🧠 **RAM 32GB**  
 
-After installation of required libs run main.py for console experience or app.py for GUI lovers.
+### 📌 Requirements:  
+🐍 **Python 3.9+**  
+💾 **Conda 3.9+** (virtual environment)  
+⚡ **CUDA (optional)**  
+
+### 🔧 Installation  
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/Katashynskyi/Voice_assistant_UA_EN.git
+cd Voice_assistant_UA_EN
+
+# 2️⃣ Create and activate a virtual environment
+conda activate ./.conda
+
+# 3️⃣ Install dependencies
+pip install uv
+uv pip install -r requirements.txt
+```
+
+---  
+
+## ▶️ Usage  
+
+🔹 **Console Mode:**  
+```bash
+python3 main.py
+```  
+🔹 **Graphical Interface (GUI):**  
+```bash
+streamlit run app.py
+```  
+
+🚀 **Done! Enjoy your powerful voice assistant!** (suggesting to change LLM to phi4 at least) 🔥
 

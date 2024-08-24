@@ -1,0 +1,13 @@
+sounddevice
+pyaudio
+SpeechRecognition
+speechbrain
+ollama
+streamlit
+audio_recorder_streamlit
+torch
+transformers
+edge_tts
+pygame
+soundfile
+numpy
